@@ -1,0 +1,37 @@
+<!-- 전역속성 : 
+  
+html의 <tag title="">: 요소의 정보를 명시하는, 설명를 지정하는 html 속성은 전역속성이다.
+
+html의 <tag style="">: 요소에 적용할 스타일(css)를 지정하는 속성도 전역속성이다.
+
+  css 선언방식 4가지
+    1. link태그를 이용해서 외부 main.css를 연결하는 선언방식
+    2. style태그를 이용해서 <head>태그 안에 css를 직접적으로 입력하는 선언방식    
+    3. 아예 태그의 속성으로 직접적으로 style="스타일(css)" 입력하는 선언방식 (위의 html의 전역속성에 해당함)
+    4. (미정.. css부트스트랩 일듯?) 
+
+html의 <tag class="중복이 가능한 이름": 요소를 지칭하는 중복 가능한 이름의 부분에만 원하는 스타일(css)를 부여하는 속성도 전역속성 이다.
+
+html의 id도 전역속성이지만 class 처럼 중복 되지 않고 고유해야 한다. 사용법은 calss와 동일하다. 
+    
+
+html의 <태그 data-원하는이름명시="텍스트데이터값"></태그> : js에서 주로 사용하는 전역속성.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div data-fruit-name="apple">사과</div>
+    <div data-fruit-name="banana">바나나</div>
+
+    <script>
+      // test : git checkout main -> git checkout -b newbranchname -> commit -> gitGraph에 commit이 어떻게 뻗어나갈까? 모든 branch를 시간순으로 상속해서? 아니면 main에서 만든 branch는 또 다른 타임라인으로 commit이 뻗어나갈까? 확인해보자.
+    </script>
+  </body>
+</html>
