@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import AppSectionCsr from "./component/sanho/AppSectionCsr";
+
+import datainfo from "./data/data.json";
+import { Margint145 } from "./component/stylecomponent/Commonui";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Margint145>
+        <AppSectionCsr />
+      </Margint145>
+    </>
   );
 }
 
