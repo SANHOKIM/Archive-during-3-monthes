@@ -44,5 +44,22 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
+    <script>
+      //클래스생성자
+      const mainswiper = new Swiper("#mainSwiper .swiper", {
+        loop: true,
+        pagination: {
+          el: "#mainSwiper .swiper-pagination",
+        },
+      });
+
+      const salesswiper = new Swiper("#adSwiper .swiper.sales", {
+        loop: true,
+
+        scrollbar: {
+          el: "#adSwiper .swiper.sales .swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
