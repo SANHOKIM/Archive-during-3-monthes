@@ -1,9 +1,7 @@
-/* 선택자복습 : 4가지 기본 선택자 (순서대로 외우면 우선순위 숙지에 좋다)  
-*asterisk selector 
--> <tag> selector 
--> .class selector 
--> #id selector  */
+/* 가상클래스 선택자 : hover, focus, active(누르는동안에효과)
+모든 가상클래스 선택자는 : 콜론기호 하나가 앞에 붙는다.  */
 
+/* 벡그라운드 그라데이션 깔아두기  */
 .bg-check {
   background: linear-gradient(
     0deg,
@@ -14,6 +12,7 @@
   height: 90vh;
 }
 
+/* hover */
 .box {
   background-color: rgb(255, 255, 255);
   width: 100px;
