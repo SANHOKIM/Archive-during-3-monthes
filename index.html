@@ -1,0 +1,54 @@
+<!-- 전역속성 : 
+  
+html의 <tag title="">: 요소의 정보를 명시하는, 설명를 지정하는 html 속성은 전역속성이다.
+
+html의 <tag style="">: 요소에 적용할 스타일(css)를 지정하는 속성도 전역속성이다.
+
+  css 선언방식 4가지
+    1. link태그를 이용해서 외부 main.css를 연결하는 선언방식
+    2. style태그를 이용해서 <head>태그 안에 css를 직접적으로 입력하는 선언방식    
+    3. 아예 태그의 속성으로 직접적으로 style="스타일(css)" 입력하는 선언방식 (위의 html의 전역속성에 해당함)
+    4. (미정.. css부트스트랩 일듯?) 
+
+html의 <tag class="중복이 가능한 이름": 요소를 지칭하는 중복 가능한 이름의 부분에만 원하는 스타일(css)를 부여하는 속성도 전역속성 이다.
+
+html의 id도 전역속성이지만 class 처럼 중복 되지 않고 고유해야 한다. 사용법은 calss와 동일하다. 
+    
+
+html의 <태그 data-원하는이름명시="텍스트데이터값"></태그> : js에서 주로 사용하는 전역속성.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div data-fruit-name="apple">사과</div>
+    <div data-fruit-name="banana">바나나</div>
+
+    <script>
+      // 1.그릇의이름 elements의 els
+      // 2.할당될 값 document(html구조)객체가querySelectorAll메소드 상태변경 실행한다. (= 요소노드 div를 찾는다!)
+      const els = document.querySelectorAll("div");
+      // 3. '2.'를 담은 '1.'그릇 el을 아래쪽에 활용할껀데,
+      // 4. 찾은 요소들이 여러개니까 담긴 그릇의 요소들을 하나씩 반복해 가면서 데이터를 처리할꺼고(els.forEach) | 그 반복되는 각각의 내용은(el) el그릇에 별도로 담아서 내부에서 사용하겠다((el)=>{}) | 각 그릇에 담긴 el " 객체가 dataset메소드 상태변경실행하면 속성설정한다!"  ( 데이터를 추출한다! 추출할 데이터는 속성인 data-fruit-name속성에서 fruit-name에 해당하는 js 표기법 -제거후뒤에알파벳첫글자대문자인 fruitName을 써준다 )
+
+      // els.forEach((el) => {
+      //   el.dataset.fruitName
+      // });
+
+      // 위 방식을 통해 이름을 작성하는 구조를 만들수 있다.
+      // 해당하는 내용을 콘솔 이라는 곳에다가 기록을 남기겠다는 뜻의 console객체에 로그 메소드 상태변경 실행한다! 를 표현
+
+      els.forEach((el) => {
+        console.log(el.dataset.fruitName);
+      });
+
+      // 정리하면: 메소드 통해 html div 태그를 모두 찾고 els 잠시 담았다가 찾은게 여러개니까, 담아둔 각각 el에 반복해서 하나씩 찾은 부분을 dataset 명령에 실제 데이터가 담긴 이름 fruit-name 의 Apple 혹은 Banana를 끄집어 콘솔창에 기록으로 남기는 자바스크립트 코드이다. className은 그럴 때 쓰는 전역속성이다.
+    </script>
+  </body>
+</html>
