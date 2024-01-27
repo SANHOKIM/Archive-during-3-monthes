@@ -3,3 +3,25 @@
 -> <tag> selector 
 -> .class selector 
 -> #id selector  */
+
+.bg-check {
+  background: linear-gradient(
+    0deg,
+    rgb(23, 132, 248) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 100vw;
+  height: 90vh;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  transition: 5s;
+}
+.box:hover {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(247, 216, 158);
+}
