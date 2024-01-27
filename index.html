@@ -11,6 +11,22 @@
     <div class="bg-check">
       <div class="box"></div>
       <input type="text" />
+
+      <!-- 
+    가상클래스 선택자 first-child : 
+예시) .fruits div:first-child : 
+형제 요소중 첫번째 요소 이면서 div인 경우에만 선택한다는 뜻으로서 아래의 경우 
+첫번째 요소라는 조건 이면서 div (첫번째 형제 요소로서 div는 없음) 인 요소는 html 구조에 없는 상태이다!!!
+ -->
+
+      <div class="fruits">
+        <span>딸기</span>
+        <br />
+        <span>수박</span>
+        <div>오렌지</div>
+        <p>망고</p>
+        <h3>사과</h3>
+      </div>
     </div>
   </body>
 </html>
