@@ -12,15 +12,24 @@
   height: 90vh;
 }
 
-/* hover */
+/* :hover */
 .box {
   background-color: rgb(255, 255, 255);
   width: 100px;
   height: 100px;
-  transition: 5s;
+  transition: 3s;
 }
 .box:hover {
   width: 100vw;
   height: 100px;
+  background-color: rgb(247, 216, 158);
+}
+
+/* :focus 
+
+ 는 가능 요소가 한정 되어 있다. input, select, textarea 등.
+div에는 적용 되지 않지만 focus가 가능한 형태로 만드려면 div 속성으로 tabindex="-1" 하면 적용된다. 하나의 페이지에 한 요소만 가능하다. input넘어가면 해제 될 것이다. */
+
+input:focus {
   background-color: rgb(247, 216, 158);
 }
