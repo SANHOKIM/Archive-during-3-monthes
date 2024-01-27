@@ -43,7 +43,11 @@
   height: 100px;
   background-color: orangered;
 }
+/* content "";는 유지하면서 inline 속성인 가상요소선택자에다가 가로세로 값이 적용 될 수 있게 블록요소로 나타내기.  d:block 속성을 넣는다! */
 .box::before {
-  content: "앞을 의미하는 before";
-  font-size: 0.5rem;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: blueviolet;
+  display: block;
 }
