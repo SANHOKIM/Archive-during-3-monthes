@@ -3,6 +3,7 @@
 // _____max-width-575px_xs_Phone-Vertical
 
 @media (max-width: 575px) {
+  // 상단마진
   .gnb {
     // 상 우 하 좌 시계방향
     margin: 20px 10px 0px 10px;
@@ -23,7 +24,6 @@
     transition: 0.2s;
   }
 }
-
 @media (min-width: 576px) {
   .button-app-download {
     opacity: 0;
