@@ -1,0 +1,31 @@
+// Navbar575.scss가 common.css를 이긴다. 왜???
+
+// _____max-width-575px_xs_Phone-Vertical
+
+@media (max-width: 575px) {
+  .gnb {
+    // 상 우 하 좌 시계방향
+    margin: 20px 10px 0px 10px;
+  }
+
+  h1 img {
+    display: block;
+    margin-top: 1px;
+  }
+  .button-app-download {
+    background-color: #3182f6;
+    width: 76px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 12px;
+    color: white;
+    font-size: 11.25px;
+    transition: 0.2s;
+  }
+}
+
+@media (min-width: 576px) {
+  .button-app-download {
+    opacity: 0;
+  }
+}

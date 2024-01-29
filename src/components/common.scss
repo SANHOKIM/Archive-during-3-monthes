@@ -1,0 +1,52 @@
+/* int setting   */
+
+body * {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Noto Sans KR";
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+button {
+  border: 0px;
+}
+
+/* layout setting */
+
+.bg-check {
+  background-color: green;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.j-content {
+  justify-content: space-between;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+// ------------------------------------------------
+
+// 연수의팁 : d-flex 먹이려면 부모 div 만들고 max-width:1200px 써봐요 크기가 있으니 외부여백 개념이 생겨 margin 0 auto 이 적용되고 0은 y축 auto는 x축을 뜻하고 auto는 가운데정렬을 뜻하니 0 auto 는 x축가운데정렬한다는 뜻.
+/* 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: red;
+}
+ */
