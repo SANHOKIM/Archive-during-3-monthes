@@ -1,0 +1,88 @@
+// Navbar575.scss가 common.css를 이긴다. 왜???
+
+h1 img {
+  display: block;
+  margin-top: 5px;
+}
+
+// _____max-width-575px_xs_Phone-Vertical
+
+@media (max-width: 575px) {
+  .gnb {
+    //상단마진: 상 우 하 좌 시계방향
+    margin: 22px 17px 0px 17px;
+  }
+  // inline로고를 block으로 한다음 마진으로 레이아웃 정리
+
+  // 버튼에 color속성이름에 데이터값 백 번 줘봐야 컨텐츠 안쓰면 이렇게 고생
+  //top-26% top-17% 대신 부모 요소 내에서 수평 중앙 정렬 margin : 0 auto 는 어떨까?왜???
+
+  .button-app-download {
+    position: relative;
+    top: -26%;
+
+    margin-right: 18px;
+    font-size: 11.25px;
+    color: white;
+    border-radius: 15px;
+    width: 76px;
+    height: 30px;
+    background-color: #3182f6;
+    // 왜 나타날때 지저분하게 나타날까? 왜???
+    // transition: 3s;
+  }
+  .button-hamburger {
+    position: relative;
+    top: -17%;
+  }
+  .navbar-lang,
+  .navbar-menu {
+    // visibility: hidden;
+    display: none;
+  }
+}
+// 575부터는 장애인을 위해 display : none 대신 opacity 투명도0 || visibility hidden을 주자. 여기서는 각 반응형 마다 나타나는 메뉴가 여전히 있고, display:none으로 부서지는 레이아웃을 방지하자.
+
+@media (min-width: 575px) {
+  .gnb {
+    // 상 우 하 좌 시계방향
+    margin: 22px 17px 0px 17px;
+  }
+
+  // drop-menus 의 2개의 버튼 스타일 적용
+  .button-app-download {
+    // 왜??? opacity가 맞을까 visibility가 맞을까
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+    // transition: 0.1s; 하면 왜 나타날때 지저분하게 나타날까? 왜???
+  }
+  .button-hamburger {
+    // visibility: hidden;
+    display: none;
+  }
+
+  // navbar-menu , lang
+
+  .navbar-menu {
+    li a {
+      padding: 10px;
+      font-size: 13px;
+      // vertical-align: bottom;
+      font-weight: 400;
+    }
+  }
+
+  // lang
+  .navbar-lang {
+    span {
+      font-size: 15px;
+      a {
+        display: inline-block;
+        padding: 0px 9px 0px 9px;
+
+        font-weight: 400;
+      }
+    }
+  }
+}

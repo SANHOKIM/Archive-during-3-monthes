@@ -1,6 +1,6 @@
 /* int setting   */
 
-body * {
+* {
   margin: 0;
   padding: 0;
 
@@ -9,13 +9,16 @@ body * {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 li {
   list-style: none;
 }
 
+// 버튼배경색이 svg를 방해하는구나
 button {
   border: 0px;
+  background-color: transparent;
 }
 
 /* layout setting */
@@ -24,13 +27,39 @@ button {
   background-color: green;
 }
 
+// container wing (d-flex 적용된 부모의 할배에게 ) 컨테이너 요소를 가로 방향으로 가운데 정렬하면서 최대 폭을 설정하여 레이아웃이 너무 퍼져 화면이 커져도 일정 크기 이상으로 늘어나지 않도록 하는데 사용됩니다. 이는 일반적으로 반응형 디자인에서 넓은 화면에서의 가독성 및 사용성을 고려하는 데 도움.
+.container-mw991px {
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+// display flex
 .d-flex {
+  /* 
+기본적으로 아이템들은 수직 방향으로 꽉 차게 배치됩니다
+d-flex-align-items-center는 수직 방향으로 가운데 정렬되어 표시됩니다.
+이는 주로 세로로 길이가 다른 아이템을 수직으로 가운데 정렬하고자 할 때 유용합니다.
+ */
+  align-items: center;
   display: flex;
+}
+
+.d-flex-align-items-center {
+  align-items: center;
+}
+
+.d-flex-flex-wrap {
+  flex-wrap: wrap;
 }
 
 .j-content {
   justify-content: space-between;
 }
+.j-content-center {
+  justify-content: center;
+}
+
+// position
 
 .p-relative {
   position: relative;
