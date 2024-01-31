@@ -8,7 +8,7 @@ function Header() {
         {/* common.scss 일정크기 이상 늘어나지 않게 하기.  */}
         <div className="container-mw991px">
           {/* 3 h1과 div앱다운로드 형제요소 블록이라해도 평행해서 양쪽으로 찢기  */}
-          <header className=" gnb d-flex j-content p-relative ">
+          <header className="gnb d-flex ">
             {/* 1 상단 네비바에 로고만듬 */}
             <h1>
               <a
@@ -19,7 +19,7 @@ function Header() {
                 <img src="./tossimg/logo-header.png" alt="toss" />
               </a>
             </h1>
-            <ul className="navbar-menu d-flex j-content-center d-flex-flex-wrap">
+            <ul className="navbar-menu d-flex  d-flex-flex-wrap">
               <li>
                 {/* <Link to="/">회사 소개</Link> */}
                 <a href="/">회사 소개</a>
@@ -39,11 +39,11 @@ function Header() {
             </ul>
             <div className="navbar-lang d-flex">
               <span>
-                <a href="">KOR</a>
+                <a href="/">KOR</a>
               </span>
               <span>|</span>
               <span>
-                <a href="">ENG</a>
+                <a href="/">ENG</a>
               </span>
             </div>
             <div className="drop-menus d-flex">

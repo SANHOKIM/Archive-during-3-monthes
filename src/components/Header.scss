@@ -11,6 +11,8 @@ h1 img {
   .gnb {
     //상단마진: 상 우 하 좌 시계방향
     margin: 22px 17px 21px 17px;
+
+    justify-content: space-between;
   }
   // inline로고를 block으로 한다음 마진으로 레이아웃 정리
 
@@ -47,31 +49,21 @@ h1 img {
   .gnb {
     // 상 우 하 좌 시계방향
     margin: 22px 17px 21px 17px;
-  }
 
-  // drop-menus 의 2개의 버튼 스타일 적용
-  .button-app-download {
-    // 왜??? opacity가 맞을까 visibility가 맞을까
-    // opacity: 0;
-    // visibility: hidden;
-    display: none;
-    // transition: 0.1s; 하면 왜 나타날때 지저분하게 나타날까? 왜???
-  }
-  .button-hamburger {
-    // visibility: hidden;
-    display: none;
+    .navbar-menu {
+      margin-right: -2px;
+      li a {
+        padding: 10px;
+        font-size: 13px;
+        // vertical-align: bottom;
+        font-weight: 400;
+      }
+      justify-content: center;
+      flex-grow: 1;
+    }
   }
 
   // navbar-menu , lang
-
-  .navbar-menu {
-    li a {
-      padding: 10px;
-      font-size: 13px;
-      // vertical-align: bottom;
-      font-weight: 400;
-    }
-  }
 
   // lang
   .navbar-lang {
@@ -84,5 +76,17 @@ h1 img {
         font-weight: 400;
       }
     }
+  }
+  // drop-menus 의 2개의 버튼 스타일 적용
+  .button-app-download {
+    // 왜??? opacity가 맞을까 visibility가 맞을까
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+    // transition: 0.1s; 하면 왜 나타날때 지저분하게 나타날까? 왜???
+  }
+  .button-hamburger {
+    // visibility: hidden;
+    display: none;
   }
 }
