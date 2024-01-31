@@ -5,7 +5,7 @@
   padding: 0;
 
   font-family: "Noto Sans KR";
-  font-weight: 600;
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -40,8 +40,9 @@ button {
 d-flex-align-items-center는 수직 방향으로 가운데 정렬되어 표시됩니다.
 이는 주로 세로로 길이가 다른 아이템을 수직으로 가운데 정렬하고자 할 때 유용합니다.
  */
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .d-flex-align-items-center {
@@ -52,7 +53,7 @@ d-flex-align-items-center는 수직 방향으로 가운데 정렬되어 표시�
   flex-wrap: wrap;
 }
 
-.j-content {
+.j-content-between {
   justify-content: space-between;
 }
 .j-content-center {

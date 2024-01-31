@@ -1,0 +1,24 @@
+// _____max-width-575px_xs_Phone-Vertical
+
+@media (max-width: 575px) {
+  .Topbanner {
+    background: linear-gradient(to right, #adc5e9, #edf5fe);
+    width: 100vw;
+    height: 25px;
+    transition: 0.1s;
+  }
+}
+
+@media (min-width: 575px) {
+  .Topbanner {
+    background: linear-gradient(to right, #adc5e9, #adc5e9);
+    width: 100vw;
+    height: 25px;
+    transition: 0.01s;
+  }
+}
+
+p {
+  font-size: 11px;
+  font-weight: 400px;
+}
