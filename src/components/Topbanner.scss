@@ -18,7 +18,18 @@
   }
 }
 
-p {
+span {
   font-size: 11px;
-  font-weight: 400px;
+  color: white;
+}
+
+span > span {
+  font-size: 13px;
+  color: #006aff;
+  font-weight: bold;
+}
+
+.manggom-face:hover {
+  color: #ffc35b;
+  transition: 0.1s;
 }
