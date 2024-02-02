@@ -1,17 +1,18 @@
 // Navbar575.scss가 common.css를 이긴다. 왜???
 
-h1 img {
-  display: block;
-  margin-top: 5px;
+.gnb {
+  //상단패딩: 상 우 하 좌 시계방향
+  padding: 22px 17px 21px 17px;
+  h1 img {
+    display: block;
+    margin-top: 5px;
+  }
 }
 
 // _____max-width-575px_xs_Phone-Vertical
 
 @media (max-width: 575px) {
   .gnb {
-    //상단마진: 상 우 하 좌 시계방향
-    margin: 22px 17px 21px 17px;
-
     justify-content: space-between;
   }
   // inline로고를 block으로 한다음 마진으로 레이아웃 정리
@@ -45,11 +46,10 @@ h1 img {
 }
 // 575부터는 장애인을 위해 display : none 대신 opacity 투명도0 || visibility hidden을 주자. 여기서는 각 반응형 마다 나타나는 메뉴가 여전히 있고, display:none으로 부서지는 레이아웃을 방지하자.
 
+// ---------------------------------------------------------------------------------
+
 @media (min-width: 575px) {
   .gnb {
-    // 상 우 하 좌 시계방향
-    margin: 22px 17px 21px 17px;
-
     .navbar-menu {
       margin-right: -2px;
       li a {

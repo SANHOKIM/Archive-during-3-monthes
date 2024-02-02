@@ -33,6 +33,23 @@ button {
   margin: 0 auto;
 }
 
+// position
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-top100 {
+  top: 100%;
+}
+.p-left100 {
+  left: 100%;
+}
+
 // display flex
 .display-flex {
   /* 
@@ -57,16 +74,6 @@ d-flex-align-items-center는 수직 방향으로 가운데 정렬되어 표시�
 }
 .j-content-center {
   justify-content: center;
-}
-
-// position
-
-.p-relative {
-  position: relative;
-}
-
-.p-absolute {
-  position: absolute;
 }
 
 // ------------------------------------------------
