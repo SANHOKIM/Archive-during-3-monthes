@@ -3,7 +3,7 @@ import "@fontsource/noto-sans-kr";
 import "./common.scss";
 import Background from "./Background";
 import Topbanner from "./Topbanner";
-import Header from "./Header";
+import Gnb from "./Gnb";
 import Main from "./componentsMain/Main";
 
 import React from "react";
@@ -12,7 +12,7 @@ function App() {
   return (
     <Background>
       <Topbanner></Topbanner>
-      <Header></Header>
+      <Gnb></Gnb>
       <Main></Main>
     </Background>
   );

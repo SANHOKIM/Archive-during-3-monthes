@@ -1,22 +1,22 @@
 import React from "react";
-import "./Header.scss";
+import "./Gnb.scss";
 
-function Header() {
+function Gnb() {
   return (
     <>
-      <section className="Header">
+      <section className="gnb">
         {/* common.scss 일정크기 이상 늘어나지 않게 하기.  */}
         <div className="container-mw991px">
           {/* 3 h1과 div앱다운로드 형제요소 블록이라해도 평행해서 양쪽으로 찢기  */}
-          <header className="gnb display-flex p-relative">
+          <header className="header display-flex p-relative">
             {/* 1 상단 네비바에 로고만듬 */}
             <h1>
-              <a className="a-header-logo" href="" target="_blank ">
+              <a className="a-header-logo" href="/" target="_blank ">
                 <img src="./tossimg/logo-header.png" alt="toss" />
               </a>
             </h1>
-            <div className="when-drop-menus">
-              <ul className="navbar-menu d-flex-flex-wrap display-flex">
+            <div className="when-drop-menus ">
+              <ul className="navbar-menu d-flex-flex-wrap">
                 <li>
                   {/* <Link to="/">회사 소개</Link> */}
                   <a href="/">회사 소개</a>
@@ -62,5 +62,4 @@ function Header() {
     </>
   );
 }
-
-export default Header;
+export default Gnb;
