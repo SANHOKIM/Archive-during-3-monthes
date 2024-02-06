@@ -40,8 +40,8 @@
   }
 
   .when-drop-menus {
-    // height: 0;
-    // overflow: hidden;
+    height: 0;
+    overflow: hidden;
 
     left: 0;
 
@@ -62,9 +62,11 @@
 
 @media (min-width: 576px) {
   .header {
-    justify-content: space-around;
+    justify-content: space-between;
+
     .navbar-menu {
       display: flex;
+      margin-left: -1px;
       li a {
         padding: 10px;
         font-size: 13px;
@@ -72,15 +74,18 @@
         font-weight: 400;
       }
 
-      flex-grow: 1;
+      // flex-grow: 1;
     }
   }
 
   .when-drop-menus {
     display: flex;
 
-    // navbar-menu , lang
-    // lang
+    .navbar-menu,
+    .navbar-lang {
+      flex-grow: 1;
+    }
+
     .navbar-lang {
       span {
         font-size: 15px;
