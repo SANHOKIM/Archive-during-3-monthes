@@ -15,35 +15,35 @@ function Gnb() {
                 <img src="./tossimg/logo-header.png" alt="toss" />
               </a>
             </h1>
-            <div className="when-drop-menus ">
-              <ul className="navbar-menu d-flex-flex-wrap">
-                <li>
-                  {/* <Link to="/">회사 소개</Link> */}
-                  <a href="/">회사 소개</a>
-                </li>
-                <li>
-                  <a href="/">고객센터</a>
-                </li>
-                <li>
-                  <a href="/">자주 묻는 질문</a>
-                </li>
-                <li>
-                  <a href="/">토스인증서</a>
-                </li>
-                <li>
-                  <a href="/">채용</a>
-                </li>
-              </ul>
-              <div className="navbar-lang display-flex">
-                <span>
-                  <a href="/">KOR</a>
-                </span>
-                <span>|</span>
-                <span>
-                  <a href="/">ENG</a>
-                </span>
-              </div>
+            {/* <div className="when-drop-menus "> */}
+            <ul className="navbar-menu d-flex-flex-wrap">
+              <li>
+                {/* <Link to="/">회사 소개</Link> */}
+                <a href="/">회사 소개</a>
+              </li>
+              <li>
+                <a href="/">고객센터</a>
+              </li>
+              <li>
+                <a href="/">자주 묻는 질문</a>
+              </li>
+              <li>
+                <a href="/">토스인증서</a>
+              </li>
+              <li>
+                <a href="/">채용</a>
+              </li>
+            </ul>
+            <div className="navbar-lang display-flex">
+              <span>
+                <a href="/">KOR</a>
+              </span>
+              <span>|</span>
+              <span>
+                <a href="/">ENG</a>
+              </span>
             </div>
+            {/* </div> */}
 
             <div className="drop-menus display-flex">
               <button className="button-app-download" onClick={<></>}>
