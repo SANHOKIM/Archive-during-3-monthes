@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Gnb.scss";
 
 function Gnb() {
+  useEffect(() => {
+    document
+      .querySelector(".button-hamburger")
+      .addEventListener("click", () => {
+        document.querySelector(".navbar-menu").classList.toggle("show");
+      });
+  }, []);
   return (
     <>
       <section className="gnb">
@@ -51,7 +58,7 @@ function Gnb() {
               </button>
 
               <button className="button-hamburger">
-                <a href="/">
+                <a href="#none">
                   <img src="./tossimg/hamburger.svg" alt="" />
                 </a>
               </button>

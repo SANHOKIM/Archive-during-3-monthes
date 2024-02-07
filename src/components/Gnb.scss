@@ -40,9 +40,9 @@
   }
 
   .navbar-menu {
-    // height: 0;
-    // overflow: hidden;
-
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
     left: 0;
 
     width: 100%;
@@ -55,9 +55,12 @@
       display: block;
     }
   }
+  .navbar-menu.show {
+    max-height: 300px;
+  }
   .navbar-lang {
-    // height: 0;
-    // overflow: hidden;
+    height: 0;
+    overflow: hidden;
 
     left: 0;
 
