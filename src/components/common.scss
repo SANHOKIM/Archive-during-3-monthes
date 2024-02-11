@@ -28,11 +28,12 @@ button {
 }
 
 // container wing (d-flex 적용된 부모의 할배에게 ) 컨테이너 요소를 가로 방향으로 가운데 정렬하면서 최대 폭을 설정하여 레이아웃이 너무 퍼져 화면이 커져도 일정 크기 이상으로 늘어나지 않도록 하는데 사용됩니다. 이는 일반적으로 반응형 디자인에서 넓은 화면에서의 가독성 및 사용성을 고려하는 데 도움.
+/* 
 .container-mw991px {
   max-width: 991px;
   margin: 0 auto;
 }
-
+ */
 // position
 
 .p-relative {

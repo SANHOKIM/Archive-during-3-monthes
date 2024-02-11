@@ -28,6 +28,36 @@ function Sectionsonggm() {
             <img src="./tossimg/section1_2_01.png" alt="" />
           </div>
         </div>
+        <div className="p-relative">
+          <p>사기계좌 조회</p>
+          <p>
+            송금 전 사기 내역 조회로
+            <br /> 피해를 미리 방지할 수 있어요{" "}
+          </p>
+
+          <p>
+            송금 전 토스가 알아서 사기 내역 조회를 해드려요. <br />
+            상대방의 연락처 또는 계좌가 사기 계좌인지 조회해 <br /> 안전하게
+            송금할 수 있어요.
+          </p>
+          <div className="songgm-img1">
+            <img src="./tossimg/section1_2_02.png" alt="" />
+          </div>
+        </div>
+        <div className="p-relative">
+          <p>자동이체 예약</p>
+          <p>
+            은행 점검 시간, <br /> 기다릴 필요 없어요{" "}
+          </p>
+
+          <p>
+            은행 점검 시간에는 자동이체 예약을 이용해보세요. <br />
+            점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
+          </p>
+          <div className="songgm-img1">
+            <img src="./tossimg/section1_2_03.png" alt="" />
+          </div>
+        </div>
       </div>
     </>
   );

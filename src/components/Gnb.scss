@@ -76,8 +76,12 @@
 // 575부터는 장애인을 위해 display : none 대신 opacity 투명도0 || visibility hidden을 주자. 여기서는 각 반응형 마다 나타나는 메뉴가 여전히 있고, display:none으로 부서지는 레이아웃을 방지하자.
 
 // ---------------------------------------------------------------------------------
-
 @media (min-width: 576px) {
+  .container-mw991px {
+    max-width: 991px;
+    margin: 0 auto;
+  }
+
   .header {
     justify-content: space-between;
 

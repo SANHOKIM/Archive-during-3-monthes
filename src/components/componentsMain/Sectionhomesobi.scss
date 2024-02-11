@@ -1,4 +1,5 @@
 // _____max-width-575px_xs_Phone-Vertical
+
 .homesobi {
   padding: 100px 0px;
 
@@ -90,6 +91,7 @@
       }
     }
   }
+
   // 하단부분 : 토스에계좌와카드를연결해보세요~
   p {
     position: relative;
@@ -103,7 +105,227 @@
 }
 
 @media (max-width: 575px) {
+  .homesobi {
+    h1,
+    h2,
+    p {
+      transition: 0.1s;
+    }
+
+    padding: 100px 0px;
+
+    position: relative;
+    max-width: 991px;
+
+    // 홈 소비
+    h1 {
+      position: relative;
+      top: 2%;
+      left: 2%;
+      font-size: 18px;
+
+      color: #3182f6;
+      font-weight: 700;
+
+      margin: 0px 0px 10px 10px;
+    }
+    h2 {
+      position: relative;
+      top: 2%;
+      left: 2%;
+
+      color: white;
+
+      margin: 0px 0px 10px 10px;
+    }
+
+    // 중단 이미지 2장 부분
+    // scss 에서는 public 상대경로 다 짜야함
+    .phoneUiOne {
+      height: 500px;
+      width: 300px;
+      position: relative;
+      display: inline-block;
+
+      /* 
+  background-image: url("../../../public/tossimg/iPhone12_Clay_Shadow-responsive.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  background-position: center;
+  display: inline-block;
+ */
+
+      img {
+        display: block;
+
+        &:first-child {
+          width: 71.4%;
+          position: relative;
+          top: 4%;
+          left: 17%;
+          // margin: 0 auto;
+        }
+        &:nth-child(2) {
+          position: relative;
+          top: -102%;
+          left: -10%;
+          // z-index: 0;
+        }
+      }
+    }
+
+    .phoneUiTwo {
+      left: 28%;
+      top: -3%;
+
+      height: 700px;
+      width: 300px;
+      position: absolute;
+      display: inline-block;
+
+      img {
+        display: block;
+
+        &:first-child {
+          width: 71.4%;
+          position: relative;
+          top: 4%;
+          left: 17%;
+          // margin: 0 auto;
+        }
+        &:nth-child(2) {
+          position: relative;
+          top: -71%;
+          left: -10%;
+          // z-index: 0;
+        }
+      }
+    }
+
+    // 하단부분 : 토스에계좌와카드를연결해보세요~
+    p {
+      position: relative;
+      top: 2%;
+      left: 2%;
+      color: white;
+      font-size: 17px;
+
+      margin: 0px 0px 10px 10px;
+    }
+  }
 }
 
 @media (min-width: 576px) {
+  .homesobi {
+    h1,
+    h2,
+    p {
+      transition: 0.1s;
+    }
+
+    padding: 100px 0px;
+
+    position: relative;
+    max-width: 991px;
+
+    // 홈 소비
+    h1 {
+      font-size: 28px;
+
+      position: relative;
+      top: 2%;
+      left: 2%;
+
+      color: #3182f6;
+      font-weight: 700;
+
+      margin: 0px 0px 10px 10px;
+    }
+    h2 {
+      font-size: 50px;
+      position: relative;
+      top: 2%;
+      left: 2%;
+
+      color: white;
+
+      margin: 0px 0px 10px 10px;
+    }
+
+    // 중단 이미지 2장 부분
+    // scss 에서는 public 상대경로 다 짜야함
+    .phoneUiOne {
+      height: 500px;
+      width: 300px;
+      position: relative;
+      display: inline-block;
+
+      /* 
+  background-image: url("../../../public/tossimg/iPhone12_Clay_Shadow-responsive.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  background-position: center;
+  display: inline-block;
+ */
+
+      img {
+        display: block;
+
+        &:first-child {
+          width: 71.4%;
+          position: relative;
+          top: 4%;
+          left: 17%;
+          // margin: 0 auto;
+        }
+        &:nth-child(2) {
+          position: relative;
+          top: -102%;
+          left: -10%;
+          // z-index: 0;
+        }
+      }
+    }
+
+    .phoneUiTwo {
+      left: 28%;
+      top: -3%;
+
+      height: 700px;
+      width: 300px;
+      position: absolute;
+      display: inline-block;
+
+      img {
+        display: block;
+
+        &:first-child {
+          width: 71.4%;
+          position: relative;
+          top: 4%;
+          left: 17%;
+          // margin: 0 auto;
+        }
+        &:nth-child(2) {
+          position: relative;
+          top: -71%;
+          left: -10%;
+          // z-index: 0;
+        }
+      }
+    }
+
+    // 하단부분 : 토스에계좌와카드를연결해보세요~
+    p {
+      position: relative;
+      top: 2%;
+      left: 2%;
+      color: white;
+      font-size: 23px;
+
+      margin: 0px 0px 10px 10px;
+    }
+  }
 }
