@@ -9,6 +9,7 @@ function Gnb() {
         document.querySelector(".navbar-menu").classList.toggle("show");
       });
   }, []);
+
   return (
     <>
       <section className="gnb">

@@ -41,8 +41,10 @@
 
   .navbar-menu {
     max-height: 0;
+    transition: 0.3s;
     overflow: hidden;
-    transition: 0.5s;
+    /* 
+     */
     left: 0;
 
     width: 100%;
@@ -51,13 +53,13 @@
     top: 100%;
     position: absolute;
 
-    .navbar-menu {
-      display: block;
-    }
+    display: block;
   }
+
   .navbar-menu.show {
     max-height: 300px;
   }
+
   .navbar-lang {
     height: 0;
     overflow: hidden;
