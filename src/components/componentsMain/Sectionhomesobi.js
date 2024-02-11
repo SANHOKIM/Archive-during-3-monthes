@@ -13,15 +13,16 @@ function Sectionhomesobi() {
           <br />
           똑똑하게
         </h2>
-        <div className="p-relative">
+        <div className="phoneUi p-relative display-flex">
           <div className="phoneUiOne">
-            <img src="./tossimg/section1_1_home_01.png" alt="" />
-            <img src="./tossimg/iPhone12_Clay_Shadow-responsive.png" alt="" />
+            <img src="./tossimg/section1_1_home_02.png" alt="" />
+
+            <img src="./tossimg/iPhone12_Clay_Shadow_high.png" alt="" />
           </div>
 
           <div className="phoneUiTwo">
-            <img src="./tossimg/section1_1_home_02.png" alt="" />
-            <img src="./tossimg/iPhone12_Clay_Shadow-responsive.png" alt="" />
+            <img src="./tossimg/section1_1_home_01.png" alt="" />
+            <img src="./tossimg/iPhone12_Clay_Shadow_high.png" alt="" />
           </div>
         </div>
         <p>
