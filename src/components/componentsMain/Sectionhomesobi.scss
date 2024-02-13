@@ -75,7 +75,7 @@
         display: block;
 
         &:first-child {
-          width: 71.4%;
+          width: 71.3%;
           position: relative;
           top: 4%;
           left: 17%;
@@ -97,7 +97,7 @@
       position: relative;
       top: 2%;
       left: 2%;
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 17px;
 
       margin: 0px 0px 10px 10px;
@@ -106,6 +106,11 @@
 }
 
 @media (min-width: 576px) {
+  .homesobi {
+    max-width: 991px;
+    margin: 0 auto;
+  }
+
   .homesobi {
     h1,
     h2,
@@ -132,12 +137,14 @@
       margin: 0px 0px 10px 10px;
     }
     h2 {
+      z-index: 1;
+
       font-size: 50px;
       position: relative;
       top: 2%;
       left: 2%;
 
-      color: white;
+      color: rgb(0, 0, 0);
 
       margin: 0px 0px 10px 10px;
     }
@@ -145,9 +152,13 @@
     // 중단 이미지 2장 부분
     // scss 에서는 public 상대경로 다 짜야함
     .phoneUiOne {
+      left: -12%;
+
+      z-index: 2;
+
       height: 936px;
       width: 600px;
-      position: relative;
+      position: absolute;
       display: inline-block;
 
       img {
@@ -170,21 +181,21 @@
 
     .phoneUi {
       height: 936px;
-      width: 600px;
+      width: 27vw;
     }
 
     .phoneUiTwo {
-      left: -53%;
-      top: -31%;
-      height: 93%;
+      left: 100%;
+      top: 0%;
+      height: 100%;
       width: 600px;
-      position: relative;
+      position: absolute;
       display: inline-block;
       img {
         display: block;
 
         &:first-child {
-          width: 57%;
+          width: 57.3%;
           position: relative;
           top: 7%;
           left: 20%;
@@ -192,7 +203,7 @@
         &:nth-child(2) {
           height: 100%;
           position: relative;
-          top: -83%;
+          top: -83.2%;
           left: -1.5%;
         }
       }
@@ -200,11 +211,13 @@
 
     // 하단부분 : 토스에계좌와카드를연결해보세요~
     p {
-      position: relative;
-      top: 2%;
-      left: 2%;
-      color: white;
+      z-index: 2;
+      position: absolute;
+      top: 72%;
+      left: 40%;
+      color: #000000;
       font-size: 23px;
+      font-weight: 500;
 
       margin: 0px 0px 10px 10px;
     }

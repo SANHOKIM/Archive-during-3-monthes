@@ -1,9 +1,18 @@
 .container-background {
+  /*   
   background: linear-gradient(
     0deg,
-    rgb(23, 132, 248) 50%,
+    rgba(255, 0, 0, 0.5) 50%,
+    rgb(255, 0, 0) 100%
+  );
+ */
+
+  background: linear-gradient(
+    0deg,
+    rgb(172, 206, 242, 0.5) 50%,
     rgba(255, 255, 255, 1) 100%
   );
+
   width: 100vw;
   height: 100vh;
 
