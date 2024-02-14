@@ -21,7 +21,7 @@
       color: #3182f6;
       font-weight: 700;
       // 왜??? padding margin position left 3개의 차이
-      padding: 0px 0px 10px 15px;
+      padding: 0px 0px 10px 23px;
     }
     h2 {
       position: relative;
@@ -29,7 +29,9 @@
       left: 1.9%;
       color: #000;
       font-weight: 600;
-      margin: 0px 0px 10px 15px;
+      // 왜??? padding margin position left 3개의 차이
+
+      margin: 0px 0px 10px 23px;
     }
 
     // 중단 이미지 2장 부분
@@ -95,7 +97,7 @@
     p {
       position: relative;
       top: -72%;
-      left: -39%;
+      left: -40%;
       color: rgb(0, 0, 0);
       font-size: 17px;
       /* margin: 0px 0px 10px 10px; */
@@ -178,13 +180,15 @@
 
     .phoneUi {
       height: 936px;
-      // width: 44vw;
-      width: 27vw;
+
+      // width:27vw 삭제, phoneUi의 부모인 .homesobi 의 max-wdith:991px; 를 그대로 상속받기위해서임. width:27vw를 주면 991px의 27%만큼도 아닌 보이는 화면의 27%만큼 계속해서 영역을 확장하므로 max-width:991px의 제한을 넘어서는 요소의 오류를 경험함.
+      // width: 27vw;
     }
 
     .phoneUiTwo {
-      // left: 71%;
-      left: 100%;
+      // left말고 Right 줘서 향후 동적움직임스타일에서도 방향 잡아주기
+      // 1.padding(내안에서만하므로편함) 2.margin(관계성유의해야해서조심하게쓰기) 3.position L/Right( L R T B 방향 먹인 곳에서만 Left-Margin ... 적용됨)
+      right: -12%;
       top: -28%;
       height: 100%;
       width: 600px;
@@ -210,11 +214,11 @@
       p {
         z-index: 2;
         position: absolute;
-        top: 95%;
-        left: 7%;
+        top: 97%;
+        left: 12%;
         color: #000000;
-        font-size: 23px;
-        font-weight: 500;
+        font-size: 21px;
+        font-weight: 600;
         margin: 0px 0px 10px 0px;
       }
     }

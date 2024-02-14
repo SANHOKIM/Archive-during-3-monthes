@@ -24,7 +24,7 @@ function Sectionhomesobi() {
             <img src="./tossimg/section1_1_home_01.png" alt="" />
             <img src="./tossimg/iPhone12_Clay_Shadow_high.png" alt="" />
             <p>
-              토토에 계좌와 카드를 연결해 보세요.
+              토쓰에 계좌와 카드를 연결해 보세요.
               <br />
               계좌 잔액, 대출·투자 내역은 기본,
               <br />

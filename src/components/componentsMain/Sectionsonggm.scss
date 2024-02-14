@@ -1,73 +1,99 @@
-.songgm {
-  padding: 100px 0px;
-  position: relative;
-  left: 2%;
-
-  .h1h2 {
-    // animation: 0.5s ease-in-out 0s 1 normal forwards running animation-1x3fevv;
-    padding-bottom: 70px;
-  }
-
-  h1 {
+@media (max-width: 575px) {
+  .songgm {
+    padding: 100px 0px;
     position: relative;
-    top: 2%;
     left: 2%;
-    color: white;
 
-    font-size: 18px;
+    .h1h2 {
+      // animation: 0.5s ease-in-out 0s 1 normal forwards running animation-1x3fevv;
+      padding-bottom: 70px;
+    }
+
+    h1 {
+      position: relative;
+      top: 2%;
+      left: 2%;
+      color: #3182f6;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 0px 0px 10px 23px;
+    }
+    h2 {
+      position: relative;
+      top: 2%;
+      left: 1.9%;
+      color: #000;
+      font-weight: 600;
+      margin: 0px 0px 10px 23px;
+      // 언제까지 이렇게? 스타일컴포넌트 쓰면되지 (scss+styled.c+tailwind+bootstrap)
+      // font-weight: 600;
+    }
+
+    .p-relative {
+      left: 5%;
+    }
+
+    .animation-songgm-p {
+      p {
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      /* 
+      animation: 1s ease-in-out 0.5s 1 normal forwards running;
+          opacity: 0;
+    transform: translate3d(0px, 50px, 0px);
+     */
+    }
+    p {
+      position: relative;
+      top: 2%;
+      left: 5%;
+      color: #000;
+
+      margin: 0px 0px 10px 10px;
+    }
+
+    p:nth-child(1) {
+      margin-bottom: 8px;
+
+      color: #3182f6;
+      font-weight: 400;
+
+      font-size: 15px;
+    }
+
+    p:nth-child(2) {
+      // display: inline-block;
+      // line-height: 28px;
+
+      margin-bottom: 10px;
+
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    p:nth-child(3) {
+      font-size: 15px;
+      font-weight: 100;
+    }
+
+    // songgm-images
+
+    // .songgm-img1  {
+    //   display: block;
+    // }
+
+    img:first-child {
+      display: block;
+      height: 70vw;
+      position: relative;
+      left: -2%;
+    }
   }
+}
 
-  h2 {
-    position: relative;
-    top: 2%;
-    left: 2%;
-    color: white;
-
-    white-space: pre-wrap;
-    font-size: 28px;
-  }
-
-  .p-relative {
-    left: 5%;
-  }
-  p {
-    position: relative;
-    top: 2%;
-    left: 5%;
-    color: white;
-
-    margin: 0px 0px 10px 10px;
-  }
-
-  p:nth-child(1) {
-    margin-bottom: 8px;
-
-    color: white;
-    font-weight: 400;
-
-    font-size: 15px;
-  }
-
-  p:nth-child(2) {
-    // display: inline-block;
-    // line-height: 28px;
-
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
-
-  p:nth-child(3) {
-    font-size: 15px;
-    font-weight: 100;
-  }
-
-  // songgm-images
-
-  // .songgm-img1  {
-  //   display: block;
-  // }
-
-  img:first-child {
-    display: block;
-  }
+@media (min-width: 576px) {
 }
