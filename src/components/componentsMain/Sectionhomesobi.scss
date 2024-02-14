@@ -20,17 +20,16 @@
 
       color: #3182f6;
       font-weight: 700;
-
-      margin: 0px 0px 10px 10px;
+      // 왜??? padding margin position left 3개의 차이
+      padding: 0px 0px 10px 15px;
     }
     h2 {
       position: relative;
       top: 2%;
-      left: 2%;
-
-      color: white;
-
-      margin: 0px 0px 10px 10px;
+      left: 1.9%;
+      color: #000;
+      font-weight: 600;
+      margin: 0px 0px 10px 15px;
     }
 
     // 중단 이미지 2장 부분
@@ -95,12 +94,11 @@
     // 하단부분 : 토스에계좌와카드를연결해보세요~
     p {
       position: relative;
-      top: 2%;
-      left: 2%;
+      top: -72%;
+      left: -39%;
       color: rgb(0, 0, 0);
       font-size: 17px;
-
-      margin: 0px 0px 10px 10px;
+      /* margin: 0px 0px 10px 10px; */
     }
   }
 }
@@ -109,9 +107,7 @@
   .homesobi {
     max-width: 991px;
     margin: 0 auto;
-  }
 
-  .homesobi {
     h1,
     h2,
     p {
@@ -139,6 +135,7 @@
     h2 {
       z-index: 1;
 
+      font-weight: 600;
       font-size: 50px;
       position: relative;
       top: 2%;
@@ -181,12 +178,14 @@
 
     .phoneUi {
       height: 936px;
+      // width: 44vw;
       width: 27vw;
     }
 
     .phoneUiTwo {
+      // left: 71%;
       left: 100%;
-      top: 0%;
+      top: -28%;
       height: 100%;
       width: 600px;
       position: absolute;
@@ -207,19 +206,17 @@
           left: -1.5%;
         }
       }
-    }
 
-    // 하단부분 : 토스에계좌와카드를연결해보세요~
-    p {
-      z-index: 2;
-      position: absolute;
-      top: 72%;
-      left: 40%;
-      color: #000000;
-      font-size: 23px;
-      font-weight: 500;
-
-      margin: 0px 0px 10px 10px;
+      p {
+        z-index: 2;
+        position: absolute;
+        top: 95%;
+        left: 7%;
+        color: #000000;
+        font-size: 23px;
+        font-weight: 500;
+        margin: 0px 0px 10px 0px;
+      }
     }
   }
 }
