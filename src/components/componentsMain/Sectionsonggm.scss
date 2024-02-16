@@ -6,7 +6,7 @@
 
     .h1h2 {
       // animation: 0.5s ease-in-out 0s 1 normal forwards running animation-1x3fevv;
-      padding-bottom: 70px;
+      padding-bottom: 40px;
     }
 
     h1 {
@@ -85,15 +85,105 @@
     // .songgm-img1  {
     //   display: block;
     // }
+  }
+  img {
+    display: block;
+    height: 70vw;
+    position: relative;
+    left: -2%;
+  }
+}
+/* 
+---------------
+---------------
+-----반응형-----
+---------------
+---------------
+ */
+@media (min-width: 576px) {
+  .songgm {
+    max-width: 991px;
+    margin: 0 auto;
 
-    img:first-child {
+    .songgm-p,
+    .saki-p,
+    .eche-p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .h1h2 {
+      padding-bottom: 70px;
+    }
+
+    h1 {
+      position: relative;
+      top: 2%;
+      left: 2%;
+      color: #3182f6;
+      font-weight: 700;
+      font-size: 25px;
+      padding: 0px 0px 10px 23px;
+    }
+    h2 {
+      font-size: 47px;
+
+      position: relative;
+      top: 2%;
+      left: 1.9%;
+      color: #000;
+      font-weight: 600;
+      margin: 0px 0px 10px 23px;
+      // 언제까지 이렇게? 스타일컴포넌트 쓰면되지 (scss+styled.c+tailwind+bootstrap)
+      // font-weight: 600;
+    }
+
+    .p-relative {
+      left: 5%;
+    }
+
+    p {
+      position: relative;
+      top: 2%;
+      left: 5%;
+      color: #000;
+
+      margin: 0px 0px 10px 10px;
+    }
+
+    p:nth-child(1) {
+      margin-bottom: 8px;
+      color: #3182f6;
+      /* font-weight: 600; */
+      font-size: 17px;
+    }
+
+    p:nth-child(2) {
+      // display: inline-block;
+      // line-height: 28px;
+
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 37px;
+    }
+
+    p:nth-child(3) {
+      font-size: 19px;
+      font-weight: 100;
+    }
+    // songgm-images
+
+    // .songgm-img1  {
+    //   display: block;
+    // }
+    img {
+      max-width: calc(100% - 20px);
+
       display: block;
-      height: 70vw;
+      height: 50%;
       position: relative;
       left: -2%;
     }
   }
-}
-
-@media (min-width: 576px) {
 }
