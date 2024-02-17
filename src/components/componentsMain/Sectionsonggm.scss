@@ -12,7 +12,7 @@
     h1 {
       position: relative;
       top: 2%;
-      left: 2%;
+      // left: 2%;
       color: #3182f6;
       font-weight: 700;
       font-size: 18px;
@@ -21,7 +21,7 @@
     h2 {
       position: relative;
       top: 2%;
-      left: 1.9%;
+      // left: 2%;
       color: #000;
       font-weight: 600;
       margin: 0px 0px 10px 23px;
@@ -88,9 +88,9 @@
   }
   img {
     display: block;
-    height: 70vw;
+    // height: 100%;
     position: relative;
-    left: -2%;
+    // left: -2%;
   }
 }
 /* 
@@ -105,6 +105,10 @@
     max-width: 991px;
     margin: 0 auto;
 
+    .songgm-p .songgm-img1 {
+      position: relative;
+      right: -2%;
+    }
     .songgm-p,
     .saki-p,
     .eche-p {
@@ -115,26 +119,27 @@
 
     .h1h2 {
       padding-bottom: 70px;
+      position: relative;
+      left: -5%;
     }
 
     h1 {
       position: relative;
       top: 2%;
-      left: 2%;
+      left: 5%;
       color: #3182f6;
       font-weight: 700;
       font-size: 25px;
-      padding: 0px 0px 10px 23px;
+      // padding: 0px 0px 10px 23px;
     }
     h2 {
       font-size: 47px;
-
       position: relative;
-      top: 2%;
-      left: 1.9%;
+      top: 1%;
+      left: 5%;
       color: #000;
       font-weight: 600;
-      margin: 0px 0px 10px 23px;
+      // margin: 0px 0px 10px 23px;
       // 언제까지 이렇게? 스타일컴포넌트 쓰면되지 (scss+styled.c+tailwind+bootstrap)
       // font-weight: 600;
     }
@@ -160,9 +165,10 @@
     }
 
     p:nth-child(2) {
+      white-space: nowrap;
+
       // display: inline-block;
       // line-height: 28px;
-
       margin-bottom: 10px;
       font-weight: 600;
       font-size: 37px;

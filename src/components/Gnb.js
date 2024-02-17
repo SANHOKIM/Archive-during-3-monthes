@@ -20,7 +20,9 @@ function Gnb() {
             {/* 1 상단 네비바에 로고만듬 */}
             <h1>
               <a className="a-header-logo" href="/" target="_blank ">
-                <img src="./tossimg/logo-header.png" alt="toss" />
+                <div>
+                  <img src="./tossimg/logo-header.png" alt="toss" />
+                </div>
               </a>
             </h1>
             {/* <div className="when-drop-menus "> */}

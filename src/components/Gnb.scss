@@ -2,8 +2,10 @@
 
 .header {
   //상단패딩: 상 우 하 좌 시계방향
-  padding: 22px 17px 21px 17px;
+  padding: 22px 0px 21px 0px;
   h1 img {
+    height: 100%;
+
     display: block;
     margin-top: 0px;
   }

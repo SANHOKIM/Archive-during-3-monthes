@@ -14,7 +14,7 @@
   );
 
   width: 100%;
-  height: 95%;
+  height: 100%;
 
   // 100vw-> 100% 교체, max-width(bootstrap .container) 세팅 후 100vw 하고 반응형 반복 무빙하면 요소들이 사용자 모니터에서 위아래로 밀림. vw를 제거하고 % 와 calc(%-px) 함수를 썼더니 안정화됨.
 

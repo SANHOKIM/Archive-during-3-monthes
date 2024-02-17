@@ -17,21 +17,26 @@
       top: 2%;
       left: 2%;
       font-size: 18px;
-
       color: #3182f6;
       font-weight: 700;
       // 왜??? padding margin position left 3개의 차이
-      padding: 0px 0px 10px 23px;
+      padding: 0px 0px 10px 23 px;
     }
     h2 {
       position: relative;
       top: 2%;
-      left: 1.9%;
+      left: 2%;
       color: #000;
       font-weight: 600;
       // 왜??? padding margin position left 3개의 차이
 
-      margin: 0px 0px 10px 23px;
+      padding: 0px 0px 10px 23px;
+    }
+
+    .phoneUi {
+      // 안돼. 왜???
+      // 스크롤이 일정수준 내려가면 두번째 클래스 요소들이 오른쪽으로 살짝횡이동
+      // transform: "translate3d(calc(-276.92px + 42.603vw), 0px, 0px)";
     }
 
     // 중단 이미지 2장 부분
@@ -41,32 +46,39 @@
       width: 300px;
       position: relative;
       display: inline-block;
-
+      left: 6%;
       img {
         display: block;
 
         &:first-child {
+          height: 79%;
+          width: auto;
+
+          top: 6%;
+          left: 13.2%;
+          position: relative;
+
+          /* 
           width: 71.4%;
           position: relative;
           top: 4%;
           left: 17%;
+ */
           // margin: 0 auto;
         }
         &:nth-child(2) {
-          width: 125%;
-
+          height: 100%;
+          width: auto;
           position: relative;
-          top: -102%;
+          top: -83%;
           left: -10%;
-          // z-index: 0;
         }
       }
     }
 
     .phoneUiTwo {
-      left: 28%;
-      top: -3%;
-
+      right: -1%;
+      top: 27.5%;
       height: 700px;
       width: 300px;
       position: absolute;
@@ -76,35 +88,51 @@
         display: block;
 
         &:first-child {
-          width: 71.3%;
+          height: 58%;
+          top: 6%;
+          left: 13.2%;
+          width: auto;
+          position: relative;
+          /* 
+          width: 71.4%;
           position: relative;
           top: 4%;
           left: 17%;
+ */
           // margin: 0 auto;
         }
         &:nth-child(2) {
-          width: 125%;
-
+          width: auto;
+          height: 72%;
           position: relative;
-          top: -70.7%;
+          top: -59%;
           left: -10%;
-          // z-index: 0;
         }
       }
     }
 
     // 하단부분 : 토스에계좌와카드를연결해보세요~
     p {
-      position: relative;
-      top: -72%;
-      left: -31%;
+      /* left: 0%; */
+      white-space: pre-wrap;
+      position: absolute;
+      top: 84%;
+      right: auto;
       color: rgb(0, 0, 0);
       font-size: 17px;
-      // margin: 0px 0px 10px 10px;
+      padding: 0px 0px 0px 32px;
+      /* margin: 0px 0px 0px 31px; */
+      /* height: 47%; */
     }
   }
 }
-
+/* 
+----------
+----------
+---반응형--
+----------
+----------
+ */
 @media (min-width: 576px) {
   .homesobi {
     max-width: 991px;
@@ -121,40 +149,51 @@
     position: relative;
     max-width: 991px;
 
+    p {
+      z-index: 3;
+      white-space: pre-wrap;
+      position: absolute;
+      top: 76%;
+      right: 3%;
+      color: rgb(0, 0, 0);
+      font-size: 23px;
+      padding: 0px 0px 0px 32px;
+      font-weight: 600;
+      /* margin: 0px 0px 10px 0px; */
+    }
+
     // 홈 소비
     h1 {
       font-size: 28px;
-
       position: relative;
       top: 2%;
-      left: 2%;
-
+      left: 0%;
       color: #3182f6;
       font-weight: 700;
-
-      margin: 0px 0px 10px 10px;
+      padding: 0px 0px 30px 0px;
     }
     h2 {
       z-index: 1;
-
       font-weight: 600;
       font-size: 50px;
       position: relative;
       top: 2%;
-      left: 2%;
-
+      left: 0%;
       color: rgb(0, 0, 0);
+      /* margin: 0px 0px 10px 10px; */
+    }
 
-      margin: 0px 0px 10px 10px;
+    .phoneUi {
+      position: relative;
+      left: 2%;
     }
 
     // 중단 이미지 2장 부분
     // scss 에서는 public 상대경로 다 짜야함
     .phoneUiOne {
-      left: -12%;
-
+      top: 7%;
+      left: -10%;
       z-index: 2;
-
       height: 936px;
       width: 600px;
       position: absolute;
@@ -172,7 +211,7 @@
         &:nth-child(2) {
           height: 100%;
           position: relative;
-          top: -83%;
+          top: -82%;
           left: -1.5%;
         }
       }
@@ -180,6 +219,7 @@
 
     .phoneUi {
       height: 936px;
+      // width:97%;
 
       // width:27vw 삭제, phoneUi의 부모인 .homesobi 의 max-wdith:991px; 를 그대로 상속받기위해서임. width:27vw를 주면 991px의 27%만큼도 아닌 보이는 화면의 27%만큼 계속해서 영역을 확장하므로 max-width:991px의 제한을 넘어서는 요소의 오류를 경험함.
       // width: 27vw;
@@ -188,7 +228,7 @@
     .phoneUiTwo {
       // left말고 Right 줘서 향후 동적움직임스타일에서도 방향 잡아주기
       // 1.padding(내안에서만하므로편함) 2.margin(관계성유의해야해서조심하게쓰기) 3.position L/Right( L R T B 방향 먹인 곳에서만 Left-Margin ... 적용됨)
-      right: -12%;
+      right: -8%;
       top: -28%;
       height: 100%;
       width: 600px;
@@ -209,17 +249,6 @@
           top: -83.2%;
           left: -1.5%;
         }
-      }
-
-      p {
-        z-index: 2;
-        position: absolute;
-        top: 97%;
-        left: 12%;
-        color: #000000;
-        font-size: 21px;
-        font-weight: 600;
-        margin: 0px 0px 10px 0px;
       }
     }
   }
