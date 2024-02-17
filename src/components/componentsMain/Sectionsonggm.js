@@ -25,8 +25,7 @@ function Sectionsonggm() {
 
             <p className="">
               누구에게 보내든 은행 상관 없이,
-              <br /> 이제 토스와 함께 수수료 걱정 없이 <br />
-              송금하세요.
+              <br /> 이제 토스와 함께 수수료 걱정 없이 송금하세요.
             </p>
           </div>
           <div className="songgm-img1">

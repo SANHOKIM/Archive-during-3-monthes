@@ -2,7 +2,7 @@
 
 .header {
   //상단패딩: 상 우 하 좌 시계방향
-  padding: 22px 0px 21px 0px;
+  // padding: 22px 0px 21px 0px;
   h1 img {
     height: 100%;
 
@@ -14,133 +14,158 @@
 // _____max-width-575px_xs_Phone-Vertical
 
 @media (max-width: 575px) {
-  .header {
-    justify-content: space-between;
-  }
-  // inline로고를 block으로 한다음 마진으로 레이아웃 정리
+  .gnb {
+    padding: 41px 0px 0px 0px;
+    height: 40px;
+    z-index: 5;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
 
-  // 버튼에 color속성이름에 데이터값 백 번 줘봐야 컨텐츠 안쓰면 이렇게 고생
-  //top-26% top-17% 대신 부모 요소 내에서 수평 중앙 정렬 margin : 0 auto 는 어떨까?왜???
+    .container-mw991px {
+      padding: 0px 20px;
+    }
 
-  .button-app-download {
-    position: relative;
-    top: -26%;
+    .header {
+      justify-content: space-between;
+    }
+    // inline로고를 block으로 한다음 마진으로 레이아웃 정리
 
-    margin-right: 18px;
-    font-size: 11.25px;
-    color: white;
-    border-radius: 15px;
-    width: 76px;
-    height: 30px;
-    background-color: #3182f6;
-    // 왜 나타날때 지저분하게 나타날까? 왜???
-    // transition: 3s;
-  }
-  .button-hamburger {
-    position: relative;
-    top: -17%;
-  }
+    // 버튼에 color속성이름에 데이터값 백 번 줘봐야 컨텐츠 안쓰면 이렇게 고생
+    //top-26% top-17% 대신 부모 요소 내에서 수평 중앙 정렬 margin : 0 auto 는 어떨까?왜???
 
-  .navbar-menu {
-    max-height: 0;
-    transition: 0.3s;
-    overflow: hidden;
-    /* 
+    .button-app-download {
+      position: relative;
+      top: -26%;
+
+      margin-right: 18px;
+      font-size: 11.25px;
+      color: white;
+      border-radius: 15px;
+      width: 76px;
+      height: 30px;
+      background-color: #3182f6;
+      // 왜 나타날때 지저분하게 나타날까? 왜???
+      // transition: 3s;
+    }
+    .button-hamburger {
+      position: relative;
+      top: -17%;
+    }
+
+    .navbar-menu {
+      max-height: 0;
+      transition: 0.3s;
+      overflow: hidden;
+      /* 
      */
-    left: 0;
+      left: 0;
 
-    width: 100%;
-    background-color: white;
+      width: 100%;
+      background-color: white;
 
-    top: 100%;
-    position: absolute;
+      top: 100%;
+      position: absolute;
 
-    display: block;
-  }
+      display: block;
+    }
 
-  .navbar-menu.show {
-    max-height: 300px;
-  }
+    .navbar-menu.show {
+      max-height: 300px;
+    }
 
-  .navbar-lang {
-    height: 0;
-    overflow: hidden;
+    .navbar-lang {
+      height: 0;
+      overflow: hidden;
 
-    left: 0;
+      left: 0;
 
-    width: 100%;
-    background-color: white;
+      width: 100%;
+      background-color: white;
 
-    top: 265%;
-    position: absolute;
+      top: 265%;
+      position: absolute;
+    }
   }
 }
 // 575부터는 장애인을 위해 display : none 대신 opacity 투명도0 || visibility hidden을 주자. 여기서는 각 반응형 마다 나타나는 메뉴가 여전히 있고, display:none으로 부서지는 레이아웃을 방지하자.
 
 // ---------------------------------------------------------------------------------
 @media (min-width: 576px) {
-  .container-mw991px {
-    max-width: 991px;
-    margin: 0 auto;
-  }
+  .gnb {
+    padding: 41px 0px 0px 0px;
+    height: 40px;
+    z-index: 5;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    .container-mw991px {
+      padding: 0px 20px;
 
-  .header {
-    justify-content: space-between;
+      max-width: 991px;
+      margin: 0 auto;
+    }
 
-    .navbar-menu {
+    .header {
+      justify-content: space-between;
+
+      .navbar-menu {
+        position: relative;
+        left: -2%;
+        display: flex;
+        // margin-left: -1px;
+
+        // 텍스트를 조금 위로 올리려면 align-items 속성을 사용하여 Flexbox 컨테이너 내의 요소들을 수직으로 정렬할 수 있습니다. 보통 기본 값은 stretch입니다. align-items: flex-start;를 사용하여 요소들을 컨테이너의 시작 부분으로 정렬할 수 있습니다.
+        align-items: flex-start;
+        // 더 올릴려면 margin
+        margin-top: -3px;
+
+        li a {
+          padding: 10px;
+          font-size: 13px;
+          // vertical-align: bottom;
+          font-weight: 400;
+        }
+
+        // flex-grow: 1;
+      }
+    }
+
+    .when-drop-menus {
       display: flex;
-      // margin-left: -1px;
 
-      // 텍스트를 조금 위로 올리려면 align-items 속성을 사용하여 Flexbox 컨테이너 내의 요소들을 수직으로 정렬할 수 있습니다. 보통 기본 값은 stretch입니다. align-items: flex-start;를 사용하여 요소들을 컨테이너의 시작 부분으로 정렬할 수 있습니다.
-      align-items: flex-start;
-      // 더 올릴려면 margin
-      margin-top: -3px;
-
-      li a {
-        padding: 10px;
-        font-size: 13px;
-        // vertical-align: bottom;
-        font-weight: 400;
+      .navbar-menu,
+      .navbar-lang {
+        flex-grow: 1;
       }
 
-      // flex-grow: 1;
-    }
-  }
+      .navbar-lang {
+        span {
+          font-size: 15px;
+          a {
+            display: inline-block;
+            padding: 0px 9px 0px 9px;
 
-  .when-drop-menus {
-    display: flex;
-
-    .navbar-menu,
-    .navbar-lang {
-      flex-grow: 1;
-    }
-
-    .navbar-lang {
-      span {
-        font-size: 15px;
-        a {
-          display: inline-block;
-          padding: 0px 9px 0px 9px;
-
-          font-weight: 400;
+            font-weight: 400;
+          }
         }
       }
     }
-  }
 
-  .drop-menus {
-    display: none;
-  }
-  // drop-menus 의 2개의 버튼 스타일 적용
-  .button-app-download {
-    // 왜??? opacity가 맞을까 visibility가 맞을까
-    // opacity: 0;
-    // visibility: hidden;
-    display: none;
-    // transition: 0.1s; 하면 왜 나타날때 지저분하게 나타날까? 왜???
-  }
-  .button-hamburger {
-    // // visibility: hidden;
-    display: none;
+    .drop-menus {
+      display: none;
+    }
+    // drop-menus 의 2개의 버튼 스타일 적용
+    .button-app-download {
+      // 왜??? opacity가 맞을까 visibility가 맞을까
+      // opacity: 0;
+      // visibility: hidden;
+      display: none;
+      // transition: 0.1s; 하면 왜 나타날때 지저분하게 나타날까? 왜???
+    }
+    .button-hamburger {
+      // // visibility: hidden;
+      display: none;
+    }
   }
 }

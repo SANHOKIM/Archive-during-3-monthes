@@ -1,7 +1,12 @@
 // _____max-width-575px_xs_Phone-Vertical
-
 @media (max-width: 575px) {
   .Topbanner {
+    z-index: 7;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0px 0px 0px 17px;
+
     background: linear-gradient(to right, #adc5e9, #edf5fe);
     width: 100%;
     height: 25px;
@@ -11,6 +16,11 @@
 
 @media (min-width: 576px) {
   .Topbanner {
+    z-index: 7;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0px 0px 0px 17px;
     background: linear-gradient(to right, #edf5fe, #adc5e9);
     width: 100%;
     height: 25px;
