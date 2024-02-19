@@ -105,20 +105,49 @@
   .songgm {
     max-width: 991px;
     margin: 0 auto;
-    .songgm-p div:first-child {
+    .songgm-p,
+    .saki-p,
+    .eche-p {
       padding: 0px 0px 0px 40px;
     }
 
     .songgm-p .songgm-img1 {
       position: relative;
       // right: -2%;
+      img {
+        padding: 0px 0px 0px 144px;
+        height: auto;
+        display: block;
+      }
+    }
+    .saki-p .songgm-img2 {
+      position: relative;
+      img {
+        padding: 0px 0px 0px 65px;
+        height: auto;
+        display: block;
+      }
+    }
+    .eche-p .songgm-img3 {
+      position: relative;
+      img {
+        padding: 0px 0px 0px 113px;
+        height: auto;
+        display: block;
+      }
     }
     .songgm-p,
     .saki-p,
     .eche-p {
+      margin: 0px -24px 0px -16px;
+      justify-content: flex-start;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .songgm-p {
+      justify-content: center;
     }
 
     .h1h2 {
@@ -152,10 +181,15 @@
 
     .p-relative {
       margin: 0px -24px 0px -16px;
+      justify-content: flex-start;
       /* left: 5%; */
     }
 
     p {
+      white-space: nowrap;
+      font-size: 19px;
+      font-weight: 100;
+
       position: relative;
       top: 2%;
       // left: 5%;
@@ -176,12 +210,13 @@
 
       // display: inline-block;
       // line-height: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 18px;
       font-weight: 600;
       font-size: 37px;
     }
 
     p:nth-child(3) {
+      white-space: nowrap;
       font-size: 19px;
       font-weight: 100;
     }
@@ -190,13 +225,18 @@
     // .songgm-img1  {
     //   display: block;
     // }
-    img {
-      // max-width: calc(100% - 20px);
-      max-width: 100%;
-      display: block;
+    // img:nth-child(1) {
+    /* 
+      padding: 0px 0px 0px 144px;
       height: auto;
-      /* position: relative; */
-      /* left: -2%; */
-    }
+      display: block;
+       */
+
+    // max-width: calc(100% - 20px);
+    // max-width: 100%;
+
+    /* position: relative; */
+    /* left: -2%; */
+    // }
   }
 }

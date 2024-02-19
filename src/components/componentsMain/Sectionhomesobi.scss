@@ -173,7 +173,7 @@
       padding: 0px 0px 30px 0px;
     }
     h2 {
-      z-index: 1;
+      z-index: 4;
       font-weight: 600;
       font-size: 50px;
       position: relative;
@@ -193,7 +193,7 @@
     .phoneUiOne {
       top: 7%;
       left: -10%;
-      z-index: 6;
+      z-index: 3;
       height: 936px;
       width: 600px;
       position: absolute;
@@ -226,7 +226,8 @@
     }
 
     .phoneUiTwo {
-      z-index: 8;
+      // z-index: 8;
+      z-index: 3;
       // left말고 Right 줘서 향후 동적움직임스타일에서도 방향 잡아주기
       // 1.padding(내안에서만하므로편함) 2.margin(관계성유의해야해서조심하게쓰기) 3.position L/Right( L R T B 방향 먹인 곳에서만 Left-Margin ... 적용됨)
       right: -8%;

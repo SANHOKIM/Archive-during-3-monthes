@@ -46,7 +46,7 @@ function Sectionsonggm() {
               송금할 수 있어요.
             </p>
           </div>
-          <div className="songgm-img1">
+          <div className="songgm-img2">
             <img src="./tossimg/section1_2_02.png" alt="" />
           </div>
         </div>
@@ -62,7 +62,7 @@ function Sectionsonggm() {
               점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
             </p>
           </div>
-          <div className="songgm-img1 ">
+          <div className="songgm-img3 ">
             <img src="./tossimg/section1_2_03.png" alt="" />
           </div>
         </div>
