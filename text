@@ -1,4 +1,4 @@
-.sectionIntro img {
+.sectionInvest img {
   display: block;
 }
 
@@ -7,5 +7,16 @@
 
 @media (min-width: 576px) {
 }
+
+
+import React from "react";
+import ".SectionLoan/.scss";
+
+function SectionLoan() {
+  return <></>;
+}
+
+export default SectionLoan;
+
 
 p,h1,h2 등 white-space : pre-wrap으로 작업한 후에 빌딩 전에 no-wrap으로 하면 반응형 영역 초과하여 사이지를 대 폭 줄였을 때 요소가 블럭처럼 안밀려떨어지더라.. 
