@@ -105,10 +105,13 @@
   .songgm {
     max-width: 991px;
     margin: 0 auto;
+    .songgm-p div:first-child {
+      padding: 0px 0px 0px 40px;
+    }
 
     .songgm-p .songgm-img1 {
       position: relative;
-      right: -2%;
+      // right: -2%;
     }
     .songgm-p,
     .saki-p,
@@ -148,16 +151,17 @@
     }
 
     .p-relative {
-      left: 5%;
+      margin: 0px -24px 0px -16px;
+      /* left: 5%; */
     }
 
     p {
       position: relative;
       top: 2%;
-      left: 5%;
+      // left: 5%;
       color: #000;
 
-      margin: 0px 0px 10px 10px;
+      margin: 0px 0px 10px 0px;
     }
 
     p:nth-child(1) {
@@ -187,12 +191,12 @@
     //   display: block;
     // }
     img {
-      max-width: calc(100% - 20px);
-
+      // max-width: calc(100% - 20px);
+      max-width: 100%;
       display: block;
-      height: 50%;
-      position: relative;
-      left: -2%;
+      height: auto;
+      /* position: relative; */
+      /* left: -2%; */
     }
   }
 }
